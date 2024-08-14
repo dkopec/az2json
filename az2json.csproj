@@ -5,7 +5,26 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Dominik Kopec</Authors>
+    <Description>A cli tool to download Azure Cloud resources as json.</Description>
+    <RepositoryUrl>https://github.com/dkopec/az2json</RepositoryUrl>
+
+    <!-- PackageProjectUrl is different from the repository URL. It can be a documentation
+         website or a website explaining the project -->
+    <PackageProjectUrl>https://github.com/dkopec/az2json</PackageProjectUrl>
+
+    <!-- A list of tags to help the search engine to understand the content of the package -->
+    <PackageTags>cli, azure, cloud</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageId>az2json</PackageId>
+  </PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.12.0" />
